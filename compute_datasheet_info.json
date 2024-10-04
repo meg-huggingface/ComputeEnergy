@@ -1,0 +1,55 @@
+{
+  "intel-icl": {"type": "cpu",
+    "architecture":  "Intel Ice Lake",
+    "tdp": -1,
+    "sources": ["https://www.xes-inc.com/assets/library/X-ES-Intel-Xeon-Ice-Lake-D-whitepaper.pdf"],
+    "notes": "Deprecated. TDP information not immediately easy to find."},
+
+  "intel-spr": {"type":  "cpu",
+    "architecture":  "Intel Sapphire Rapids",
+    "tdp": 350,
+    "sources": ["https://www.intel.com/content/www/us/en/developer/articles/technical/fourth-generation-xeon-scalable-family-overview.html"],
+    "notes": "This is renamed, and is a member of the Intel Xeon family. See linked datasheet for more details."},
+
+  "intel-xeon": {"type": "cpu",
+    "architecture": "Intel Xeon",
+    "tdp": 270,
+    "sources": ["https://www.intel.com/content/www/us/en/developer/articles/technical/fourth-generation-xeon-scalable-family-overview.html"],
+    "notes": "There are 2 types of Intel Xeons, one with up to 40 cores (which uses max 270 W) and one with up to 28 cores (which uses 250 W). Providing the max value here; not sure which is being used under the hood. See linked datasheet for more details."},
+
+  "nvidia-a10g": {"type":  "gpu",
+    "architecture": "Nvidia A10G",
+    "tdp": 300,
+    "sources": ["https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a10/pdf/datasheet-new/nvidia-a10-datasheet.pdf"],
+    "notes":  ""},
+
+  "nvidia-t4": {"type":  "gpu",
+    "architecture": "Nvidia Tesla T4",
+    "tdp": 70,
+    "sources": ["https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf"],
+    "notes":  ""},
+
+  "nvidia-l4": {"type":  "gpu",
+    "architecture":  "Nvidia L4",
+    "tdp": 72,
+    "sources": ["https://www.nvidia.com/en-us/data-center/l4/"],
+    "notes":  ""},
+
+  "nvidia-a100": {"type":  "gpu",
+    "architecture": "Nvidia A100",
+    "tdp": 250,
+    "sources": ["https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/a100/pdf/nvidia-a100-datasheet.pdf"],
+    "notes":  "There are 2 possible A100s: Nvidia HGX (400 W) and 40GB PCle (250 W). Providing the max value here; not sure which is being used under the hood. See linked datasheet for more details."},
+
+  "nvidia-l40s": {"type":  "gpu",
+    "architecture": "Nvidia L40S",
+    "tdp":  350,
+    "sources":  ["https://resources.nvidia.com/en-us-l40s/l40s-datasheet-28413","https://www.horizoniq.com/blog/nvidia-l40s/"],
+    "notes":  ""},
+
+  "nvidia-h100": {"type":  "gpu",
+    "architecture": "Nvidia H100",
+    "tdp": 700,
+    "sources": ["https://resources.nvidia.com/en-us-tensor-core/nvidia-tensor-core-gpu-datasheet"],
+    "notes": ["There are 2 possible H100s: H100 SXM (700 W) and H100 NVL (350-400 W). Providing the max value here; not sure which is being used under the hood. See linked datasheet for more details."]}
+  }
